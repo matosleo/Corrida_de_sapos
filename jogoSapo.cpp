@@ -2,8 +2,8 @@
 #include "jogoSapo.h"
 
 
-JogoSapo::JogoSapo(int novaDistancia) {
-	distancia = novaDistancia;
+JogoSapo::JogoSapo(int newDistancia) {
+	distancia = newDistancia;
 }
 
 JogoSapo::~JogoSapo(){}
@@ -16,6 +16,12 @@ JogoSapo::addJogador(Sapo* jogador) {
 		jogadores[total_jogadores++] = jogador;
 	}
 }
+
+void
+JogoSapo::setTotal_Jogadores(int qtd) {
+	total_jogadores = qtd;
+}
+
 
 void
 JogoSapo::runGame() {
@@ -46,5 +52,3 @@ JogoSapo::exibirResultado() {
 
 	std::cout << "O Vencedor foi " << vencedor->getId() << std::endl; 
 }
-
-

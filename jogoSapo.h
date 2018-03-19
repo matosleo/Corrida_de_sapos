@@ -12,11 +12,12 @@ private:
 
 
 public:
-	JogoSapo(int novaDistancia);
+	JogoSapo(int newDistancia);
 	~JogoSapo();
 
 	void addJogador(Sapo* jogador);
 	void runGame();
 	void exibirResultado();
+	void setTotal_Jogadores(int qtd);
 
 };
